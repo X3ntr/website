@@ -134,6 +134,26 @@ figure {
     width: 49%
 }
 
+.row {
+    width: 100%;
+}
+
+.tile {
+    width: 18%;
+    float: left;
+    margin: 0 1%;
+}
+
+.tile > img {
+    width: 100%;
+    border: 1px solid darkgray;
+}
+
+figcaption {
+    text-align: center;
+    padding: 1% 0;
+}
+
 .clearfix:after {
     content: ".";
     visibility: hidden;

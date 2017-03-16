@@ -1,0 +1,143 @@
+@media screen and (orientation: landscape) {
+
+}
+
+@media screen and (orientation: portrait) {
+
+}
+
+@media screen and (min-device-width: 480px) {
+
+}
+
+@media screen and (min-device-width: 640px) {
+
+}
+
+@media screen and (min-device-width: 800px) {
+
+}
+
+@media screen and (min-device-width: 1024px) {
+
+}
+
+body {
+    width: 98%;
+    padding: 0 1%;
+    margin: 0;
+    font-family: "latolight", "Arial", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #494949; /*#152060*/
+    background: linear-gradient(snow, rgba(96, 23, 37, 0.85));
+}
+
+header {
+}
+
+main {
+    width: 90%;
+    box-shadow: -10px 10px 10px -10px #555, 10px 10px 10px -10px #555;
+    background: linear-gradient(rgba(240, 240, 250, 0.85), rgba(211, 211, 211, 0.85));
+    margin: 0 auto 1% auto;
+    padding: 1%;
+    text-align: center;
+}
+
+main > section, main > article {
+    text-align: justify;
+    width: 90%;
+    margin: auto;
+}
+
+/*footer {
+    width: 82%;
+    height: 100px;
+    background: linear-gradient(#152060, #09103a);
+    margin: 0 auto;
+    box-shadow: -10px 0 10px -10px #09103a, 10px 0 10px -10px #09103a;
+}*/
+
+.logo {
+    width: 20%;
+    height: 2%;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 1% 0;
+}
+
+.banner {
+    width: 100%;
+    margin: 1% 0 0 0;
+    padding: 0;
+    border: 1px solid darkgray;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    text-align: left;
+    background: linear-gradient(floralwhite, lightgrey);
+    box-shadow: 0px 3px 10px #888;
+}
+
+nav li {
+    display: inline-block;
+    width: 12%;
+    padding: 0;
+    margin: 0;
+    font-size: 95%;
+    line-height: 250%;
+    text-align: center;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555555;
+    display: block;
+    transition: .3s background;
+    margin: 0;
+    padding: 0;
+}
+
+nav a:hover {
+    background: linear-gradient(lightgrey, darkgray);
+}
+
+.current-nav-element {
+    background: linear-gradient(lightgrey, darkgray);
+    color: #555555;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+figure {
+    width: 100%;
+    margin: auto;
+}
+
+.left {
+    float: left;
+    margin: auto;
+    display: block;
+    width: 49%
+}
+
+.right {
+    float: right;
+    margin: auto;
+    display: block;
+    width: 49%
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}

@@ -60,6 +60,14 @@ main {
 main > section, main > article {
     text-align: justify;
     width: 90%;
+    margin: auto auto 2% auto;
+}
+
+h2, h3 {
+    margin: 1% auto 1% auto;
+}
+
+p {
     margin: auto;
 }
 
@@ -147,20 +155,46 @@ figure {
     margin: auto;
 }
 
+figcaption {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1vw;
+}
+
 .left {
     float: left;
     margin: auto;
     display: block;
-    width: 49%;
-    border: 1px solid darkgray;
+    width: 50%;
+    text-align: center;
 }
 
 .right {
     float: right;
     margin: auto;
     display: block;
-    width: 49%;
+    width: 50%;
+    text-align: center;
+}
+
+.left > img, .right > img {
+    width: 60%;
+}
+
+.map-left {
     border: 1px solid darkgray;
+    float: left;
+    margin: auto;
+    display: block;
+    width: 49%;
+}
+
+.map-right {
+    border: 1px solid darkgray;
+    float: right;
+    margin: auto;
+    display: block;
+    width: 49%;
 }
 
 .row {
@@ -178,7 +212,7 @@ figure {
     border: 1px solid darkgray;
 }
 
-figcaption {
+.tile > figcaption {
     text-align: center;
     padding: 1% 0;
 }

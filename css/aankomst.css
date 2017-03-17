@@ -17,6 +17,7 @@
     overflow: hidden;
     word-break: normal;
     width: 20%;
+    margin: auto;
 }
 
 .tg .tg-9hbo {
@@ -38,13 +39,13 @@
 }
 
 @media screen and (max-width: 767px) {
-    .tg {
+    /*.tg {
         width: auto !important;
     }
 
     .tg col {
         width: auto !important;
-    }
+    }*/
 
     .tg-wrap {
         overflow-x: auto;

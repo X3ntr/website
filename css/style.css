@@ -10,26 +10,16 @@
 
 }
 
-@media screen and (min-device-width: 640px) {
-
+@media screen and (max-device-width: 450px) {
+    h1 {
+        font-size: 15px;
+    }
 }
 
-@media screen and (max-device-width: 620px) {
-    /*
-    .container {
-        display: inline-flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: stretch;
+@media screen and (max-device-width: 550px) {
+    h1 {
+        font-size: 30px;
     }
-
-    .item {
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: 10vw;
-    }
-    */
 }
 
 @media screen and (min-device-width: 1024px) {
@@ -61,6 +51,10 @@ main > section, main > article {
     text-align: justify;
     width: 90%;
     margin: auto auto 2% auto;
+}
+
+h1 {
+    font-size: 50px;
 }
 
 h2, h3 {

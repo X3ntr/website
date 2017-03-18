@@ -47,6 +47,10 @@
 }
 
 @media screen and (max-device-width: 450px) {
+    h1 {
+        font-size: 15px;
+    }
+
     tr > th:nth-child(2), tr > td:nth-child(2), tr > th:nth-child(4), tr > td:nth-child(4) {
         display: none;
 
@@ -67,6 +71,10 @@
 }
 
 @media screen and (max-device-width: 550px) {
+
+    h1 {
+        font-size: 30px;
+    }
 
     tr > th:nth-child(2), tr > td:nth-child(2) {
         display: none;

@@ -79,7 +79,7 @@ p {
     position: relative;
     left: 0;
     top: 0;
-    margin: 1% 0;
+    margin: 1%;
 }
 
 .banner {
@@ -176,7 +176,7 @@ figcaption {
 }
 
 .no-center {
-    text-align: left;
+    text-align: justify;
 }
 
 .map-left {

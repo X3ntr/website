@@ -46,6 +46,14 @@
     box-shadow: -15px 15px 15px -15px #888, 15px 15px 15px -15px #888;
 }
 
+.row-light {
+    background-color: snow;
+}
+
+.row-dark {
+    background-color: whitesmoke;
+}
+
 @media screen and (max-device-width: 450px) {
     h1 {
         font-size: 15px;

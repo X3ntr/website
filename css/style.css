@@ -47,10 +47,17 @@ main {
     text-align: center;
 }
 
-main > section, main > article {
+main > section {
     text-align: justify;
     width: 90%;
     margin: auto auto 2% auto;
+}
+
+main > article {
+    padding: 1%;
+    text-align: justify;
+    width: 90%;
+    margin: 0 auto;
 }
 
 h1 {
@@ -175,8 +182,62 @@ figcaption {
     width: 60%;
 }
 
+.left-20 {
+    display: block;
+    float: left;
+    margin: auto;
+    width: 20%;
+    text-align: justify;
+}
+
+.left-33 {
+    display: block;
+    float: left;
+    margin: auto;
+    width: 33.3%;
+    text-align: justify;
+}
+
+.left-25 {
+    display: block;
+    float: left;
+    margin: auto;
+    width: 25%;
+    text-align: justify;
+}
+
+.left-20 img {
+    width: 100%;
+}
+
+.left-25 img {
+    width: 80%;
+}
+
+.left-33 img {
+    width: 85%;
+}
+
+.left-20 figcaption, .left-33 figcaption, .left-25 figcaption {
+    padding: 2% 5%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.left-20 p, .left-33 p, .left-25 p {
+    padding: 2% 5%;
+    text-align: justify;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
 .no-center {
     text-align: justify;
+}
+
+.center {
+    text-align: center;
 }
 
 .map-left {
@@ -184,7 +245,7 @@ figcaption {
     float: left;
     margin: auto;
     display: block;
-    width: 49%;
+    width: 49.5%;
 }
 
 .map-right {
@@ -192,7 +253,7 @@ figcaption {
     float: right;
     margin: auto;
     display: block;
-    width: 49%;
+    width: 49.5%;
 }
 
 .row {
@@ -227,6 +288,14 @@ figcaption {
     margin: 0 auto;
     width: 98%;
     padding: 1%;
+}
+
+.snow {
+    background-color: snow;
+}
+
+.smoke {
+    background-color: whitesmoke;
 }
 
 .clearfix:after {

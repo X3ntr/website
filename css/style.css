@@ -113,7 +113,7 @@ nav ul {
     margin: 0;
     text-align: left;
     background: linear-gradient(floralwhite, lightgrey);
-    box-shadow: 0px 3px 10px #888;
+    box-shadow: 0 3px 10px #888;
 }
 
 nav li {
@@ -304,6 +304,30 @@ figcaption {
     background-color: whitesmoke;
 }
 
+#faq {
+    list-style: none;
+    padding: 0;
+}
+
+#faq li {
+    width: 100%;
+    border: 1px solid darkgray;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin: 1% auto;
+    padding: 1%;
+    background-color: whitesmoke;
+}
+
+#faq li:hover {
+    background-color: darkgray;
+}
+
+#faq li a {
+    text-decoration: none;
+    color: #494949;
+}
+
 .clearfix:after {
     content: ".";
     visibility: hidden;
@@ -313,14 +337,7 @@ figcaption {
 }
 
 @media screen and (max-device-width: 1000px) {
-    .map-left {
-        border: 1px solid darkgray;
-        margin: auto;
-        display: block;
-        width: 100%;
-    }
-
-    .map-right {
+    .map-left, .map-right {
         border: 1px solid darkgray;
         margin: auto;
         display: block;
@@ -348,6 +365,21 @@ figcaption {
         text-align: center;
         padding: 1% 0;
         font-size: 2vw;
+    }
+
+    .left, .right {
+        margin: auto;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .left > figcaption, .right > figcaption {
+        font-size: 2vw;
+    }
+
+    .left p, .right p {
+        text-align: justify;
     }
 }
 

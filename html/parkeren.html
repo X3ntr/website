@@ -77,17 +77,20 @@
             <div class="clearfix">
                 <input class="form-left small-left" type="email" name="email" placeholder="email*" required>
                 <input class="form-left small-left" type="tel" name="tel" placeholder="telefoon nummer*" required>
-                <input class="form-right big-right" type="text" name="adres" placeholder="mijn straat 25, 1234 gemeente, land*" required>
+                <input class="form-right big-right" type="text" name="adres"
+                       placeholder="mijn straat 25, 1234 gemeente, land*" required>
             </div>
 
             <div class="clearfix">
-                <select class="form-left big-left" name="voertuig" required autofocus>
-                    <option value="personenwagen" selected>Personenwagen</option>
+                <select class="form-left big-left" name="voertuig" autofocus required>
+                    <option value="" selected>Selecteer wagen</option>
+                    <option value="personenwagen">Personenwagen</option>
                     <option value="bestelwagen">Bestelwagen</option>
                     <option value="motor-bromfiets">Motor of bromfiets</option>
                 </select>
                 <select class="form-right big-right" name="wagenpark" required>
-                    <option value="t1" selected>Wagenpark T1</option>
+                    <option value="" selected>Selecteer wagenpark</option>
+                    <option value="t1">Wagenpark T1</option>
                     <option value="t2">Wagenpark T2</option>
                     <option value="3a">Wagenpark 3A</option>
                     <option value="3b">Wagenpark 3B</option>
@@ -96,13 +99,13 @@
             </div>
 
             <div class="clearfix">
-                <label class="form-left">Van*</label>
-                <label class="form-right">Tot*</label>
+                <label for="van" class="form-left">Van*</label>
+                <label for="tot" class="form-right">Tot*</label>
             </div>
 
             <div class="clearfix">
-                <input class="form-left big-left" type="datetime-local" name="van" required>
-                <input class="form-right big-right" type="datetime-local" name="tot" required>
+                <input id="van" class="form-left big-left" type="datetime-local" name="van" required>
+                <input id="tot" class="form-right big-right" type="datetime-local" name="tot" required>
             </div>
 
             <input type="submit" value="Reserveer">

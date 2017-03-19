@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Parkeren</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/aankomst.css">
+    <link rel="stylesheet" href="../css/form.css">
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
 </head>
 <body>
@@ -29,6 +31,83 @@
 
 <main>
     <header><h1>Parkeren</h1></header>
+    <section>
+        <h2>Info</h2>
+        <div class="tg-wrap">
+            <table class="tg">
+                <thead>
+                <tr>
+                    <th class="tg-9hbo">Voertuig</th>
+                    <th class="tg-9hbo">Wagenpark</th>
+                    <th class="tg-9hbo">Kost</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="row-dark">
+                    <td rowspan="2" class="tg-yw4l">personenwagens en bestelwagens</td>
+                    <td class="tg-yw4l">T1, T2 wagenpark en wagenparken 3A, 3B</td>
+                    <td class="tg-yw4l">$0.04 per min*</td>
+                </tr>
+                <tr class="row-light">
+                    <td class="tg-yw4l">Wagenpark Zuid</td>
+                    <td class="tg-yw4l">$0.035 per min (gelimiteerd tot $35 per 24u)</td>
+                </tr>
+                <tr class="row-dark">
+                    <td class="tg-yw4l">Motors en bromfietsen</td>
+                    <td class="tg-yw4l">T1, T2 wagenpark en wagenparken 3A, 3B</td>
+                    <td class="tg-yw4l">$1.30 per dag</td>
+                </tr>
+                <tr class="row-light">
+                    <td colspan="3" class="tg-yw41">*24u parkeren kost in totaal $57.60</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <h2>Reserveren</h2>
+        <form>
+
+            <div class="clearfix">
+                <input class="form-left small-left" type="text" name="naam" placeholder="naam*" required>
+                <input class="form-left small-left" type="text" name="voornaam" placeholder="voornaam*" required>
+                <input class="form-right big-right" type="text" name="nummerplaat" placeholder="nummerplaat*" required>
+            </div>
+
+            <div class="clearfix">
+                <input class="form-left small-left" type="email" name="email" placeholder="email*" required>
+                <input class="form-left small-left" type="tel" name="tel" placeholder="telefoon nummer*" required>
+                <input class="form-right big-right" type="text" name="adres" placeholder="mijn straat 25, 1234 gemeente, land*" required>
+            </div>
+
+            <div class="clearfix">
+                <select class="form-left big-left" name="voertuig" required autofocus>
+                    <option value="personenwagen" selected>Personenwagen</option>
+                    <option value="bestelwagen">Bestelwagen</option>
+                    <option value="motor-bromfiets">Motor of bromfiets</option>
+                </select>
+                <select class="form-right big-right" name="wagenpark" required>
+                    <option value="t1" selected>Wagenpark T1</option>
+                    <option value="t2">Wagenpark T2</option>
+                    <option value="3a">Wagenpark 3A</option>
+                    <option value="3b">Wagenpark 3B</option>
+                    <option value="zuid">Wagenpark Zuid</option>
+                </select>
+            </div>
+
+            <div class="clearfix">
+                <label class="form-left">Van*</label>
+                <label class="form-right">Tot*</label>
+            </div>
+
+            <div class="clearfix">
+                <input class="form-left big-left" type="datetime-local" name="van" required>
+                <input class="form-right big-right" type="datetime-local" name="tot" required>
+            </div>
+
+            <input type="submit" value="Reserveer">
+        </form>
+    </section>
 </main>
 
 <footer></footer>

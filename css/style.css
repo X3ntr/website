@@ -22,8 +22,8 @@
     }
 }
 
-@media screen and (min-device-width: 1024px) {
-
+@media screen and (max-device-width: 1000px) {
+    /*change info columns*/
 }
 
 body {
@@ -222,6 +222,8 @@ figcaption {
     padding: 2% 5%;
     font-size: 20px;
     font-weight: 500;
+    /*word-break: break-all;*/
+    word-wrap: break-word;
 }
 
 .left-20 p, .left-33 p, .left-25 p {
@@ -230,6 +232,8 @@ figcaption {
     height: 100%;
     font-size: 20px;
     font-weight: 500;
+    word-break: break-all;
+    word-wrap: break-word;
 }
 
 .no-center {
@@ -238,6 +242,12 @@ figcaption {
 
 .center {
     text-align: center;
+}
+
+.border {
+    border-left: 1px solid darkgray;
+    width: 19.7%;
+    min-height: 450px;
 }
 
 .map-left {

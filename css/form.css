@@ -1,0 +1,68 @@
+form {
+    width: 100%;
+    margin: auto;
+    padding: 1%;
+    display: block;
+    background-color: whitesmoke;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+select, input[type=datetime-local], input[type=text], input[type=email], input[type=tel] {
+    padding: 1%;
+    display: inline-block;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type=datetime-local] {
+    margin: 0 auto 1% auto;
+}
+
+label {
+    width: 49%;
+    margin: 1% auto 0.1% auto;
+    padding: 1% 0;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: snow;
+    padding: 1%;
+    margin: 1% auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+    background-color: darkgray;
+}
+
+.small-right {
+    width: 24%;
+    margin: 1% 0 1% 1%;
+}
+
+.small-left {
+    width: 24%;
+    margin: 1% 1% 1% 0;
+}
+
+.big-right, .big-left {
+    width: 49%;
+    margin: 1% auto;
+}
+
+.form-left {
+    float: left;
+}
+
+.form-right {
+    float: right;
+}

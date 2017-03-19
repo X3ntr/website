@@ -1,0 +1,60 @@
+tr > td:first-child {
+    background-color: whitesmoke;
+}
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.tg td {
+    font-family: inherit;
+    font-weight: normal;
+    padding: 1% 0;
+    border: 0.1em solid;
+    overflow: hidden;
+    word-break: normal;
+    overflow-wrap: break-word;
+    width: 20%;
+    margin: auto;
+    font-weight: 500;
+    vertical-align: top;
+    font-size: 1.8vw;
+}
+
+.tg-wrap {
+    width: 100%;
+    margin: auto;
+    box-shadow: -15px 15px 15px -15px #888, 15px 15px 15px -15px #888;
+}
+
+@media screen and (max-device-width: 450px) {
+    h1 {
+        font-size: 15px;
+    }
+
+    .tg td {
+        font-size: 2.3vw;
+    }
+}
+
+@media screen and (max-device-width: 550px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .tg td {
+        font-size: 1.9vw;
+    }
+}
+
+@media screen and (min-device-width: 1200px) {
+
+    .tg td {
+        font-size: 1.2vw;
+    }
+}
